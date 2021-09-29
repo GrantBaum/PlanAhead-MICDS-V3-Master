@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://app.convertcalculator.co/embed.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanAhead</title>
+</head>
+<body background="https://tse4.mm.bing.net/th/id/OIP.2cYY8-xDm6UppNIxchgjtQHaEo?w=254&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+	
+	<!--MENU-->
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Menu</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <a href="index.html">Home</a>
+		  <a href="schedule.html">Schedule</a>
+		  <a href="sports.html">Sports</a>
+		  <a href="links.html">Important Links</a>
+		  <a href="calculator.html">Calculator</a>
+		</div>
+	  </div>
+	  <style>
+	/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}	  
+	  </style>
+	  <script>
+		 /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Algebraic Calculator</title>
+
+  <p class="heading">ALGEBRAIC  CALCULATOR</p>
+  <div class="input-group">
+    <input type="number" class="form-control" aria-label="amount" id="number" placeholder="Enter a number">
+  </div>
+ <div class="text-center">
+  <button class="btn btn-light" onclick="square()">Square</button>
+  <button class="btn btn-light" onclick="squareroot()">Square root</button>
+  <button class="btn btn-light" onclick="cube()">Cube</button>
+  <button class="btn btn-light" onclick="cuberoot()">Cube root</button>
+ </div>
+
+  <p class="answer" id="answerid"></p>
+
+  <script>
+
+    function square(){
+      if(document.getElementById("number").value === ""){
+        alert("Please enter a number")
+      }
+      let inputnum = document.getElementById("number").value;
+      let squareans;
+      squareans = inputnum * inputnum;
+      document.getElementById("answerid").innerHTML = "Square of " + inputnum + " is "+ squareans;
+    }
+
+    function squareroot(){
+      if(document.getElementById("number").value === ""){
+        alert("Please enter a number")
+      }
+      let inputnum = document.getElementById("number").value;
+      let squarerootans;
+      squarerootans = (Math.round(Math.sqrt(inputnum)*1000))/1000;
+      document.getElementById("answerid").innerHTML = "Square root of " + inputnum + " is "+ squarerootans;
+    }
+
+    function cube(){
+      if(document.getElementById("number").value === ""){
+        alert("Please enter a number")
+      }
+      let inputnum = document.getElementById("number").value;
+      let cubeans;
+      cubeans = inputnum * inputnum* inputnum;
+      document.getElementById("answerid").innerHTML = "Cube of " + inputnum + " is "+ cubeans;
+    }
+
+    function cuberoot(){
+      if(document.getElementById("number").value === ""){
+        alert("Please enter a number")
+      }
+      let inputnum = document.getElementById("number").value;
+      let cuberootans;
+      cuberootans = (Math.round(Math.cbrt(inputnum)*1000))/1000;
+      document.getElementById("answerid").innerHTML = "Cube root of " + inputnum + " is "+ cuberootans;
+    }
+  </script>
+  <style>
+    *{ padding: 7px;
+    font-family: "Segoe UI",sans-serif;}
+
+html, body {
+    margin: 3%;
+    margin-top: 5%;
+}
+
+body {
+    background-color: lightgrey;
+    justify-content: center;
+}
+
+.answer{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+
+  </style>
+
+
+

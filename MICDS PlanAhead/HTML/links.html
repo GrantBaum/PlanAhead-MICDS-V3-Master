@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanAhead</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body background="https://tse4.mm.bing.net/th/id/OIP.2cYY8-xDm6UppNIxchgjtQHaEo?w=254&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+    <!---->
+    <!--DROPDOWN MENU-->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="sports.html">Sports</a>
+        <a href="links.html">Important Links</a>
+        <a href="calculator.html">Calculator</a>
+      </div>
+      </div>
+      <style>
+          /* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+      </style>
+      <script>
+          /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+      </script>
+      <!--END OF DROPDOWN-->
+     <!--LINKS-->
+ <k><h6>IMPORTANT LINKS</h6></k>
+ <!--LINK BUTTONS-->
+<button onclick="location.href = 'https://micds.instructure.com/'">Canvas</button>
+<button onclick="location.href = 'https://mymicds.net/home'">MyMICDS</button>
+<button onclick="location.href = 'https://micds.org'">MICDS Website</button>
+<button onclick="location.href = 'https://accounts.veracross.com/micds/portals/login'">Portal</button>
+<button onclick="location.href = 'https://student.teachtci.com/student/programs/260'">Science Book</button>
+<button onclick="location.href = 'https://goformative.com/'">GoFormative</button>
+<!---->
+<!--END OF BUTTONS-->
+<style>
+ button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+</style>
+ <style>
+     k {
+         text-align: center;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-size: 75px;
+        text-decoration: underline;
+     }
+ </style>
+ <style>
+     .LINKS {
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 40px;
+     background-color: whitesmoke;
+     }
+ </style>
+  <!--END OF LINKS-->
+  <!--LINK FUNCTIONS-->
+
+</body>
+</html>

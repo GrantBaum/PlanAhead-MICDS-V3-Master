@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanAhead</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body background="https://tse4.mm.bing.net/th/id/OIP.2cYY8-xDm6UppNIxchgjtQHaEo?w=254&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+  <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Menu</button>
+		<div id="myDropdown" class="dropdown-content">
+		  <a href="index.html">Home</a>
+		  <a href="schedule.html">Schedule</a>
+		  <a href="sports.html">Sports</a>
+		  <a href="links.html">Important Links</a>
+		  <a href="calculator.html">Calculator</a>
+		</div>
+	  </div>
+  <style>
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+  </style>
+    <!--HEAD TEXT AND LOGO-->
+    <d><img src="https://mymicds.net/assets/logo/logo.svg" alt="MICDS logo" class="center"></d>
+   <j><h1>PlanAhead</h1></j>
+   <j><p>By the MyMICDS DevTeam</p></j>
+    <style>
+    j {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0px;
+        text-decoration: underline;
+    }
+    </style>
+    <style>
+      img {
+          height: 175px;
+          width: 175px;
+          text-align: center;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+      }
+    </style>
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    <!--END OF HEAD TEXT AND LOGO-->
+    <!--DIGITAL CLOCK-->
+    <div style="text-align: center;"><iframe src="https://free.timeanddate.com/clock/i7y2f0m8/n605/fn12/fs18/fcfff/tc009/ftb/bls0/brs0/bts4/btc00b/tt0" frameborder="0" width="493" height="25"></iframe></div>
+      <!--END OF DIGITAL CLOCK-->
+      <script>
+      const today = new Date()
+      const tomorrow = new Date(today)
+      tomorrow.setDate(tomorrow.getDate() + 1)
+    </script></j>
+    <style>
+
+  </style>
+      <!--START OF WEATHER-->
+      <div id="cont_0ff3861ff0ccd85a204c852d94ba46d5"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/0ff3861ff0ccd85a204c852d94ba46d5"></script></div>                      
+<!--CURRENT WEATHER END-->
+
+ <!---MAP TO MICDS-->
+ <div style="text-align: center;"></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.6651398429176!2d-90.39874793265395!3d38.658281164221236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df3336887ab0e9%3A0xbfde9297a76cee54!2sMICDS%20(Mary%20Institute%20and%20Saint%20Louis%20Country%20Day%20School)!5e0!3m2!1sen!2sus!4v1629412443453!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+ <!--END OF MAP-->
+
+ 
+</body>
+</html>
